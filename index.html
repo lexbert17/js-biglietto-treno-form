@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h2>calcola il prezzo del tuo biglietto</h2>
+
+    <section class="module">
+        <!-- chilometri da percorrere  -->
+        <div class="input-item">
+            <label for="kilometres">chilometri da percorrere</label>
+            <input type="number" id="kilometres">
+        </div>
+        <!-- fascia età -->
+        <div class="input-item">
+            <label for="age">fascia d'età</label>
+            <select id="age">
+                <option value="17">-18</option>
+                <option value="18-64">18-64</option>
+                <option value="65">+65</option>
+            </select>
+        </div>
+        
+        <div class="buttons">
+            <button id="send">Genera</button>
+            <button id="clear">Annulla</button>
+        </div>
+    </section>
+
+    <!-- risposta -->
+    <section class="result-section hidden">
+        <p id="price-text"> </p>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
